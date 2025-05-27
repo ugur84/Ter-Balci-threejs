@@ -42,7 +42,7 @@ L’objectif est de créer une application web interactive permettant de mieux c
 **David Vanderhaeghe**  
 Maître de conférences – Université de Toulouse  
 [www.dlyr.fr](https://www.dlyr.fr)  
-📧 David.Vanderhaeghe@irit.fr
+David.Vanderhaeghe@irit.fr
 
 ---
 
