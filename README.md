@@ -25,11 +25,6 @@ Ce projet a pour but de concevoir une application web interactive en utilisant *
 
 ## Organisation du dépôt
 
-- `src/` : code source du projet (JS, HTML, etc.)
-- `docs/` : documents, schémas, références
-- `cahier_des_charges.md` : définition du périmètre et des objectifs
-- `suivi_avancement.md` : suivi des étapes et jalons du projet
-
 ## Encadrant
 
 **David Vanderhaeghe**  
