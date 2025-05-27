@@ -1,38 +1,49 @@
-# TER – Démonstration interactive de concepts de rendu temps réel en Three.js
+# TER – Visualisation interactive de caméras en Three.js
 
-##  Objectif
+Ce projet a été réalisé dans le cadre d’un TER (Travail d'Étude et de Recherche) à l’Université de Toulouse.  
+L’objectif est de créer une application web interactive permettant de mieux comprendre le fonctionnement de différentes caméras en 2D et 3D, à l’aide de la bibliothèque **Three.js**.
 
-Ce projet a pour but de concevoir une application web interactive en utilisant **Three.js**, permettant de visualiser et manipuler des modèles de caméras simples (trou d’épingle, lentille fine). Il sert à illustrer de manière visuelle des concepts optiques et de rendu 2D/3D, dans le cadre d’un **TER (Travail d'Étude et de Recherche)**.
+---
 
-## Fonctionnalités prévues
+## 🎯 Objectifs
 
-- **Modélisation 2D** :
-  - Caméra trou d’épingle
-  - Caméra à lentille fine (thin lens)
-  - Visualisation des rayons lumineux et du cercle de confusion
-  - Interaction : cliquer sur un point pour voir les rayons et leur projection
+- Illustrer des concepts optiques de base : trou d’épingle, lentille fine.
+- Visualiser les rayons lumineux et le cercle de confusion.
+- Permettre une interaction simple pour mieux comprendre comment fonctionne une caméra virtuelle.
 
-- **Visualisation 3D avec Three.js** :
-  - Affichage d’une caméra virtuelle en 3D
-  - Vue de la scène à travers la caméra
-  - Contrôle interactif des paramètres optiques via une interface
+---
 
-## Technologies utilisées
+## 🧩 Fonctionnalités prévues
+
+### 🔹 Affichage 2D
+- Modèle de **caméra trou d’épingle**
+- Modèle de **caméra à lentille fine**
+- Cliquer sur un point pour afficher les rayons lumineux
+- Cercle de confusion pour les deux modèles
+
+### 🔹 Affichage 3D
+- Affichage d'une caméra virtuelle en 3D
+- Visualisation de la scène à travers cette caméra
+- Interface pour modifier les paramètres optiques (distance focale, ouverture, etc.)
+- Voir les effets en temps réel
+
+---
+
+## 🛠️ Technologies utilisées
 
 - [Three.js](https://threejs.org/)
 - HTML / CSS / JavaScript
 - Git & GitHub
 
-## Organisation du dépôt
+---
 
-## Encadrant
+## 👨‍🏫 Encadrant
 
 **David Vanderhaeghe**  
 Maître de conférences – Université de Toulouse  
-Équipe STORM – IRIT  
-[www.dlyr.fr](http://www.dlyr.fr)  
+[www.dlyr.fr](https://www.dlyr.fr)  
 📧 David.Vanderhaeghe@irit.fr
 
 ---
 
-> Projet réalisé dans le cadre du TER 2024–2025 – Université Toulouse.
+> Ce projet a pour but de produire une démonstration utilisable pour un cours en ligne, avec des slides interactives intégrées à [ce site](https://www.dlyr.fr/CG/is-ig-KINXPA51.html).
