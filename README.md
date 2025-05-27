@@ -5,7 +5,7 @@ L’objectif est de créer une application web interactive permettant de mieux c
 
 ---
 
-## 🎯 Objectifs
+## Objectifs
 
 - Illustrer des concepts optiques de base : trou d’épingle, lentille fine.
 - Visualiser les rayons lumineux et le cercle de confusion.
@@ -13,15 +13,15 @@ L’objectif est de créer une application web interactive permettant de mieux c
 
 ---
 
-## 🧩 Fonctionnalités prévues
+## Fonctionnalités prévues
 
-### 🔹 Affichage 2D
+### Affichage 2D
 - Modèle de **caméra trou d’épingle**
 - Modèle de **caméra à lentille fine**
 - Cliquer sur un point pour afficher les rayons lumineux
 - Cercle de confusion pour les deux modèles
 
-### 🔹 Affichage 3D
+### Affichage 3D
 - Affichage d'une caméra virtuelle en 3D
 - Visualisation de la scène à travers cette caméra
 - Interface pour modifier les paramètres optiques (distance focale, ouverture, etc.)
@@ -29,7 +29,7 @@ L’objectif est de créer une application web interactive permettant de mieux c
 
 ---
 
-## 🛠️ Technologies utilisées
+## Technologies utilisées
 
 - [Three.js](https://threejs.org/)
 - HTML / CSS / JavaScript
@@ -37,7 +37,7 @@ L’objectif est de créer une application web interactive permettant de mieux c
 
 ---
 
-## 👨‍🏫 Encadrant
+## Encadrant
 
 **David Vanderhaeghe**  
 Maître de conférences – Université de Toulouse  
