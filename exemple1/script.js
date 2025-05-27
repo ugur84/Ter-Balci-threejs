@@ -1,28 +1,33 @@
-// 1. Créer la scène, la caméra, et le rendu
+// 1. Create the scene (this is the empty 3D space)
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+// 2. Create a camera (it's like the eye that looks at the scene)
+const camera = new THREE.PerspectiveCamera(
+  75,                                   // field of view angle
+  window.innerWidth / window.innerHeight, // screen width/height ratio
+  0.1,                                  // near clipping distance
+  1000                                  // far clipping distance
+);
+camera.position.z = 5;  // Move the camera back to see the object
+
+// 3. Create the renderer and add it to the web page
 const renderer = new THREE.WebGLRenderer();
-renderer.setSize(window.innerWidth, window.innerHeight);  // Ajuste la taille du rendu
-document.body.appendChild(renderer.domElement);  // Ajoute le rendu à la page
+renderer.setSize(window.innerWidth, window.innerHeight); // screen size
+document.body.appendChild(renderer.domElement); // add the renderer to the HTML
 
-// 2. Créer un carré (plan) avec une couleur
-const geometry = new THREE.PlaneGeometry(5, 5);  // Crée un carré de 5x5 unités
-const material = new THREE.MeshBasicMaterial({ color: 0x00ff00, side: THREE.DoubleSide });  // Vert
-const square = new THREE.Mesh(geometry, material);  // Crée un objet 3D avec cette géométrie et matériau
-scene.add(square);  // Ajoute le carré à la scène
+// 4. Load the logo image
+const textureLoader = new THREE.TextureLoader(); // tool to load an image
+const texture = textureLoader.load('logo.png'); // load the file logo.png
 
-// 3. Positionner la caméra
-camera.position.z = 10;  // Place la caméra un peu loin du carré pour bien le voir
+// 5. Create a plane (rectangle) and apply the image on it
+const geometry = new THREE.PlaneGeometry(4, 4); // size of the plane (rectangle)
+const material = new THREE.MeshBasicMaterial({
+  map: texture,         // image to display
+  side: THREE.DoubleSide, // visible from both sides
+  transparent: true       // allow transparency if the image has it
+});
+const logo = new THREE.Mesh(geometry, material); // create the 3D object with the image
+scene.add(logo); // add the object to the scene
 
-// 4. Fonction d'animation
-function animate() {
-  requestAnimationFrame(animate);  // Demande à l'ordinateur de redessiner la scène à chaque frame
-
-  // On fait tourner le carré pour qu'il soit animé
-  square.rotation.x += 0.01;
-  square.rotation.y += 0.01;
-
-  renderer.render(scene, camera);  // Rendu de la scène avec la caméra
-}
-
-animate();  // Lance l'animation
+// 6. Function to display the scene (called once here because no animation needed)
+renderer.render(scene, camera); // render the scene with the camera
