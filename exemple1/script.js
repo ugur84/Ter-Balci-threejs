@@ -8,7 +8,7 @@ const camera = new THREE.PerspectiveCamera(
   0.1,                                  // near clipping distance
   1000                                  // far clipping distance
 );
-camera.position.z = 5;  // Move the camera back to see the object
+camera.position.z = 10;  // Move the camera back to see the object
 
 // 3. Create the renderer and add it to the web page
 const renderer = new THREE.WebGLRenderer();

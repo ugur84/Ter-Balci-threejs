@@ -41,13 +41,16 @@ textureLoader.load(
 );
 
 // Define the animation loop function
-function animate() {
+function animate(time) {
   // Request the browser to call this function again before the next repaint
   requestAnimationFrame(animate);
   // If the mesh has been created, rotate it a bit around the Y axis every frame
   if (logoMesh) {
-    logoMesh.rotation.x += 0.01;
+    logoMesh.rotation.y += 0.01;
   }
+  camera.updateProjectionMatrix();
+   camera.fov= 75 + Math.cos(0.001*time)*10;
+            camera.updateProjectionMatrix();
   // Render the current state of the scene from the perspective of the camera
   renderer.render(scene, camera);
 }
